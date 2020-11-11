@@ -1,7 +1,7 @@
 import React from "react";
 import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
-const FooterPage = () => {
+export const Footer = () => {
   return (
     <MDBFooter color="grey darken-2" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
@@ -27,7 +27,7 @@ const FooterPage = () => {
             <h5 className="title">Contact</h5>
             <ul>
               <li className="list-unstyled">
-                <a href="#!">Address: Phòng 407b, tòa nhà B1, Đại học Bách Khoa Hà Nộ</a>
+                <a href="#!">Address: Phòng 407b, tòa nhà B1, Đại học Bách Khoa Hà Nội</a>
               </li>
               <li className="list-unstyled">
                 <a href="#!">Email: sinno@soict.hust.edu.vn</a>
@@ -45,4 +45,4 @@ const FooterPage = () => {
   );
 }
 
-export default FooterPage;
+
