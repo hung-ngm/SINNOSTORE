@@ -3,6 +3,7 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 
 export const Footer = () => {
   return (
+    <div>
     <MDBFooter color="grey darken-2" className="font-small pt-4 mt-4">
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
@@ -38,10 +39,11 @@ export const Footer = () => {
       </MDBContainer>
       <div className="footer-copyright text-center py-3">
         <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright: <a href="#"> SOICT Innovation Club - All Rights Reserved </a>
+          &copy; {new Date().getFullYear()} Copyright: <a href="https://users.soict.hust.edu.vn/sinno/"> SOICT Innovation Club - All Rights Reserved </a>
         </MDBContainer>
       </div>
     </MDBFooter>
+    </div>
   );
 }
 
