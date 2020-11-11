@@ -1,6 +1,6 @@
 import React from "react";
-import { NavBar } from "./NavBar";
-import { Footer } from "./Footer";
+import { NavBar } from "./Share/NavBar";
+import { Footer } from "./Share/Footer";
 
 export const Home = () => {
     return (

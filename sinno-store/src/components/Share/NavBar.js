@@ -1,5 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 import { Navbar, Nav, Form, FormControl, Button, NavDropdown } from 'react-bootstrap';
 
 
@@ -8,14 +9,14 @@ export const NavBar = () => {
     return (
         <div className="NavBar">
             <Navbar bg="dark" variant="dark sticky-top">
-                <Navbar.Brand href="#home">SinnoStore</Navbar.Brand>
+                <Link to="/home"><Navbar.Brand>SinnoStore</Navbar.Brand></Link>
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
+                    <Link to="/home"><Nav.Link>Home</Nav.Link></Link>
                     <NavDropdown title="Products" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#">Apps</NavDropdown.Item>
-                        <NavDropdown.Item href="#">IoT</NavDropdown.Item>
+                        <NavDropdown.Item><Link to="/apps">Apps</Link></NavDropdown.Item>
+                        <NavDropdown.Item><Link to="/iot">IoT</Link></NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link href="#pricing">Contact</Nav.Link>
+                    <Link to="/contact"><Nav.Link disabled="false">Contact</Nav.Link></Link>
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
