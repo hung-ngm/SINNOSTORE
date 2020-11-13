@@ -12,7 +12,7 @@ import { Contact } from './components/Contact';
 function App() {
   return (
     <div className="App">
-      <Route path="/home" component={Home} />
+      <Route path="/" component={Home} exact />
       <Route path="/apps" component={Apps} />
       <Route path="/iot" component={Iot} />
       <Route path="/contact" component={Contact} />

@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+/* Categories */
+.Cate {
+  padding: 100px 20px;
+}

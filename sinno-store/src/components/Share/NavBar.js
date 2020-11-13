@@ -9,9 +9,9 @@ export const NavBar = () => {
     return (
         <div className="NavBar">
             <Navbar bg="dark" variant="dark sticky-top">
-                <Link to="/home"><Navbar.Brand>SinnoStore</Navbar.Brand></Link>
+                <Link to="/"><Navbar.Brand>SinnoStore</Navbar.Brand></Link>
                 <Nav className="mr-auto">
-                    <Link to="/home"><Nav.Link>Home</Nav.Link></Link>
+                    <Link to="/"><Nav.Link>Home</Nav.Link></Link>
                     <NavDropdown title="Products" id="basic-nav-dropdown">
                         <NavDropdown.Item><Link to="/apps">Apps</Link></NavDropdown.Item>
                         <NavDropdown.Item><Link to="/iot">IoT</Link></NavDropdown.Item>
