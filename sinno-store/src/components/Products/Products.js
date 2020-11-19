@@ -13,8 +13,8 @@ export const Products = (props) => {
        
         <h2>{product.name}</h2>
         
-       <Rating rating={product.rating} numReviews={product.numReviews} />
-        <div className="price">${product.price}</div>
+        <Rating rating={product.rating} numReviews={product.numReviews} />
+        
     </div>
     </div>
     )
