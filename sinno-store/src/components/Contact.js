@@ -1,7 +1,8 @@
 import React from "react";
 import { NavBar } from "./Share/NavBar";
 import { Footer } from "./Share/Footer";
-import { MDBContainer, MDBRow, MDBCol, MDBBtn, MDBIcon, MDBInput } from 'mdbreact';
+import { MDBContainer, MDBCol, MDBInput, MDBRow} from "mdbreact";
+import "./contact.css"
 
 export const Contact = () => {
     return (
