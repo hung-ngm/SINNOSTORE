@@ -19,12 +19,7 @@ export const Contact = () => {
                             success="right" />
                             <MDBInput type="textarea" rows="2" label="Your message" icon="pencil-alt" />
                         </div>
-                        <div className="text-center">
-                            <MDBBtn outline color="secondary">
-                            Send
-                            <MDBIcon far icon="paper-plane" className="ml-1" />
-                            </MDBBtn>
-                        </div>
+                      
                         </form>
                     </MDBCol>
                     </MDBRow>
@@ -33,3 +28,12 @@ export const Contact = () => {
         </div>
     )
 }
+
+/*
+  <div className="text-center">
+                            <MDBBtn outline color="secondary">
+                            Send
+                            <MDBIcon far icon="paper-plane" className="ml-1" />
+                            </MDBBtn>
+                        </div>
+ */
