@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavBar } from "../Share/NavBar";
 import { Footer } from "../Share/Footer";
 import { Products } from './Products';
-import { SingleProduct } from './SingleProduct';
 import { products } from '../../data.js'
 
 

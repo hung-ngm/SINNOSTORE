@@ -9,6 +9,7 @@ import { Apps } from './components/Products/Apps';
 import { Iot } from './components/Products/Iot';
 import { Contact } from './components/Contact';
 import { SingleProduct } from './components/Products/SingleProduct';
+import { Auth } from './components/Auth/Auth';
 
 function App() {
   return (
@@ -17,7 +18,8 @@ function App() {
       <Route path="/apps" component={Apps} exact />
       <Route path="/iot" component={Iot} />
       <Route path="/contact" component={Contact} />
-      <Route path="/apps/:id" component={SingleProduct}></Route>
+      <Route path="/apps/:id" component={SingleProduct} />
+      <Route path="/auth" component={Auth} />
       
     
     
