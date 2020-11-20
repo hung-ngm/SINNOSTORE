@@ -9,18 +9,19 @@ export const NavBar = () => {
     return (
         <div className="NavBar">
             <Navbar bg="dark" variant="dark sticky-top">
-                <Link to="/"><Navbar.Brand>SinnoStore</Navbar.Brand></Link>
+                <Navbar.Brand as={Link} to="/">SinnoStore</Navbar.Brand>
                 <Nav className="mr-auto">
-                    <Link to="/"><Nav.Link>Home</Nav.Link></Link>
+                    <Nav.Link as={Link} to="/">Home</Nav.Link>
                     <NavDropdown title="Products" id="basic-nav-dropdown">
-                        <NavDropdown.Item><Link to="/apps">Apps</Link></NavDropdown.Item>
-                        <NavDropdown.Item><Link to="/iot">IoT</Link></NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/apps">Apps</NavDropdown.Item>
+                        <NavDropdown.Item as={Link} to="/iot">IoT</NavDropdown.Item>
                     </NavDropdown>
-                    <Link to="/contact"><Nav.Link disabled="false">Contact</Nav.Link></Link>
+                    <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-info">Log in</Button>
+                    <Button variant="outline-info">Sign In</Button>
+                    <Button variant="outline-info">Sign Up</Button>
                 </Form>
             </Navbar>
         </div>
