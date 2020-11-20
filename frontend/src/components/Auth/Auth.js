@@ -22,6 +22,7 @@ export const Auth = () => {
         
 
         </Container>
+        
         </div>
     )
 }

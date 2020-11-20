@@ -15,8 +15,6 @@ export const Apps = () => {
             <NavBar />
             
             <div className="row center">
-            
-            
             {
                 products.map((product) => {
                     return (
