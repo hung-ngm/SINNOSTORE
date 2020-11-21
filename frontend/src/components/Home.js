@@ -3,7 +3,7 @@ import { NavBar } from "./Share/NavBar";
 import { Footer } from "./Share/Footer";
 import { Intro }  from "./Share/Intro";
 import { Cate } from "./Share/Cate";
-import { About } from "./Share/About";
+import { About } from "./Share/About1";
 import { Form } from "react-bootstrap";
 // image
 import web1 from './Share/images/Web1.jpg';
