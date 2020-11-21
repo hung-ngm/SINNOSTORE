@@ -23,21 +23,22 @@ code {
   height: 100%
 }
 
+
+
+
 /* Intro */
 .Intro {
   margin-top: 50px;
 }
-/* .introImgContainer {
-} */
 .introImg {
-  width: 920px;
+  width: 760px;
   height: 640px;
 }
 .introDescribtion {
   font-size: 1.6rem;
 }
 .introTitle {
-  padding-top: 320px;
+  padding-top: 200px;
   font-size: 2.4rem;
 }
 .introButton {
@@ -47,14 +48,35 @@ code {
   font-size: 1.2rem;
 }
 
-/* Aboust */
+
+
+
+/* About */
 .About {
-  background-color: #878b92;
-  margin-bottom: 0;
+  background-color: #e3e3e4;
+  padding: 40px 0 40px 0;
 }
-.AboutImg {
+.aboutTitle {
+  text-align: center;
+}
+.aboutTitleContent {
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.aboutSection1 {
+  margin-top: 40px;
+}
+.aboutImgContainer {
+  padding-left: 40px;
+}
+.aboutImg {
   width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
+
+
 
 /* Categories */
 .Cate {
@@ -64,6 +86,9 @@ code {
 .CateImg {
   width: 400px;
 }
+
+
+
 
 /* Footer */
 .Footer {
@@ -79,6 +104,9 @@ ul {
 li {
   margin-top: 1rem;
 }
+
+
+
 
 /* Card */
 .card {
@@ -118,6 +146,9 @@ li {
   justify-content: center;
 }
 
+
+
+
 /* Image */
 img {
   border-radius: 0.5rem;
@@ -129,6 +160,9 @@ img.medium {
   height: 13rem;
 
 }
+
+
+
 
 /* Rating */
 .rating span {

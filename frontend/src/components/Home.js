@@ -23,7 +23,9 @@ export const Home = () => {
                 <Intro />
 
                 <div className="About">
-                    <h1>About</h1>
+                    <div className="aboutTitle">
+                        <h1 className="aboutTitleContent">About</h1>
+                    </div>
                     <About />
                 </div>
                 

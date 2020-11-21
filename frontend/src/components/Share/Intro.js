@@ -9,7 +9,6 @@ const Intro = () => {
             <div className="">
                 <div className="container-fluid">
                     <div className="row introRow">
-                    
                         <div className="col-lg-6 introImgContainer">
                             <img className="introImg" src={sinnoBrand} alt="sinno" />
                         </div>
@@ -25,7 +24,6 @@ const Intro = () => {
                                 </Button>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
