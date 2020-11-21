@@ -24,13 +24,27 @@ code {
 }
 
 /* Intro */
-.IntroImg {
-  height: 400px;
+.Intro {
+  margin-top: 50px;
 }
-
-/* Categories */
-.CateImg {
-  width: 400px;
+.introImgContainer {
+}
+.introImg {
+  width: 920px;
+  height: 640px;
+}
+.introDescribtion {
+  font-size: 1.6rem;
+}
+.introTitle {
+  padding-top: 320px;
+  font-size: 2.4rem;
+}
+.introButton {
+  padding-left: 160px;
+}
+.introButtonContent {
+  font-size: 1.2rem;
 }
 
 /* Aboust */
@@ -40,6 +54,15 @@ code {
 }
 .AboutImg {
   width: 600px;
+}
+
+/* Categories */
+.Cate {
+  /* background-color: #c0c1c2; */
+  padding: 100px 20px;
+}
+.CateImg {
+  width: 400px;
 }
 
 /* Footer */
