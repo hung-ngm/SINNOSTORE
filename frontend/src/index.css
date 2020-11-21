@@ -56,6 +56,9 @@ code {
   background-color: #e3e3e4;
   padding: 40px 0 40px 0;
 }
+.aboutContent {
+  margin-right: 0;
+}
 .aboutTitle {
   text-align: center;
 }
@@ -74,8 +77,51 @@ code {
   margin-left: auto;
   margin-right: auto;
 }
+.aboutStore {
+  margin-top: 50px;
+}
+.aboutStoreContent {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.aboutProduct {
+  margin-top: 50px;
+}
+.aboutProductContent {
+  font-weight: bolder;
+  font-size: 1.2rem;
+}
+.aboutHr {
+  margin-top: 80px;
+  border: 1px solid;
+  width: 800px;
+}
 
-
+/* About2 */
+.about2TitleContainer {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+.about2Title {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bolder;
+}
+.aboutSection2 {
+  margin: 40px 0 80px 0;
+}
+.productQuality {
+  margin-right: 0;
+}
+.about2Content {
+  text-align: center;
+}
+.icon {
+  margin-bottom: 40px;
+}
+.qualityTitle {
+  font-weight: bolder;
+}
 
 
 /* Categories */

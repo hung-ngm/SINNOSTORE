@@ -11,16 +11,16 @@ export function About() {
                     </div>
                 </div>
                 <div className="col-lg-6 col-md-12 colTextAbout">
-                    <div className="aboutSinno">
-                        <h4>About Store</h4>
+                    <div className="aboutStore">
+                        <h4 className="aboutStoreContent">About Store</h4>
                     </div>
                     <div className="aboutSinnoContent">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
-                    <div className="aboutStore">
-                        <h4>About Products</h4>
+                    <div className="aboutProduct">
+                        <h4 className="aboutProductContent">About Products</h4>
                     </div>
-                    <div className="aboutStoreContent">
+                    <div className="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                     </div>
                 </div>

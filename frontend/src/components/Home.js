@@ -30,13 +30,19 @@ export const Home = () => {
 
                     <About />
 
+                    <hr className="aboutHr"/>
+                    
+                    <div className="about2TitleContainer">
+                        <h1 className="about2Title">Products</h1>
+                    </div>
+
                     <div className="container-ident aboutSection2">
                         <div className="row productQuality">
-                            <About2 col="col-lg-4 col-md-12 productQuality1" icon="icon fas fa-check-circle fa-4x" title="qualityTitle" content="qualityContent" titleText="Easy to use." contentText="So easy to use, even your dog could do it."/>
+                            <About2 col="col-lg-4 col-md-12 productQuality1" icon="icon fas fa-check-circle fa-4x" title="qualityTitle" content="qualityContent" titleText="Easy to use." contentText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
 
-                            <About2 col="col-lg-4 col-md-12 productQuality2" icon="icon fas fa-bullseye fa-4x" title="qualityTitle" content="qualityContent" titleText="Lorem ipsum " contentText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+                            <About2 col="col-lg-4 col-md-12 productQuality2" icon="icon fas fa-bullseye fa-4x" title="qualityTitle" content="qualityContent" titleText="Up to date" contentText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
 
-                            <About2 col="col-lg-4 col-md-12 productQuality3" icon="icon fas fa-heart fa-4x" title="qualityTitle" content="qualityContent" titleText="Lorem ipsum " contentText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+                            <About2 col="col-lg-4 col-md-12 productQuality3" icon="icon fas fa-heart fa-4x" title="qualityTitle" content="qualityContent" titleText="Practically useful" contentText="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
                         </div>
                     </div>
                     
