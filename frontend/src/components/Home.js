@@ -4,6 +4,7 @@ import { Footer } from "./Share/Footer";
 import { Intro }  from "./Share/Intro";
 import { Cate } from "./Share/Cate";
 import { About } from "./Share/About1";
+import { About2 } from "./Share/About2";
 import { Form } from "react-bootstrap";
 // image
 import web1 from './Share/images/Web1.jpg';
@@ -26,7 +27,19 @@ export const Home = () => {
                     <div className="aboutTitle">
                         <h1 className="aboutTitleContent">About</h1>
                     </div>
+
                     <About />
+
+                    <div className="container-ident aboutSection2">
+                        <div className="row productQuality">
+                            <About2 col="col-lg-4 col-md-12 productQuality1" icon="icon fas fa-check-circle fa-4x" title="qualityTitle" content="qualityContent" titleText="Easy to use." contentText="So easy to use, even your dog could do it."/>
+
+                            <About2 col="col-lg-4 col-md-12 productQuality2" icon="icon fas fa-bullseye fa-4x" title="qualityTitle" content="qualityContent" titleText="Lorem ipsum " contentText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+
+                            <About2 col="col-lg-4 col-md-12 productQuality3" icon="icon fas fa-heart fa-4x" title="qualityTitle" content="qualityContent" titleText="Lorem ipsum " contentText="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
+                        </div>
+                    </div>
+                    
                 </div>
                 
                 <div className="Cate">
