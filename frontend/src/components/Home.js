@@ -3,6 +3,7 @@ import { NavBar } from "./Share/NavBar";
 import { Footer } from "./Share/Footer";
 import { Intro }  from "./Share/Intro";
 import { Cate } from "./Share/Cate";
+import { Cate2 } from "./Share/Cate2";
 import { About } from "./Share/About1";
 import { About2 } from "./Share/About2";
 import { Form } from "react-bootstrap";
@@ -49,16 +50,24 @@ export const Home = () => {
                 </div>
                 
                 <div className="Cate">
-                    <h2>Categories</h2>
-                    <div className="row CateRow1">
-                        <Cate col="col-lg-6" link="#" imgRowSrc={web1} imgRowAlt="Web" cateClass="product-title"/>
-                        <Cate col="col-lg-6" link="#" imgRowSrc={mobile} imgRowAlt="Mobile" cateClass="product-title"/>
+                    <div className="Category">
+                        <h2 className="CategoryText">Categories</h2>
                     </div>
-                    <div className="row CateRow2">
-                        <Cate col="col-lg-4" link="#" imgRowSrc={IoT} imgRowAlt="IoT" cateClass="product-title"/>
-                        <Cate col="col-lg-4" link="#" imgRowSrc={AI} imgRowAlt="AI" cateClass="product-title"/>
-                        <Cate col="col-lg-4" link="#" imgRowSrc={others} imgRowAlt="Others" cateClass="product-title"/>
-                    </div>
+                    
+                    <Cate cateSectionNo="cateSection" row="row cateRow1" cateContentNo="cateContent1" cateContentTitleNo="cateContentTitle1" cateContentTitle="Embeded Sytem & IoT"   cateTitleNo="cateTitle1" cateContentDesNo="cateContentDes1" cateContentDes="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." cateContentDownNo="cateContentDown1" cateImgNo="cateImg1" imgNo="cateImg1" src={IoT} alt="Embeded Sytem & IoT"/>
+
+                    <hr className="cateHr"/>
+
+                    <Cate2 cateSectionNo="cateSection" row="row cateRow2" cateContentNo="cateContent2" cateContentTitleNo="cateContentTitle2" cateContentTitle="Apps & Tools" cateTitleNo="cateTitle2" cateContentDesNo="cateContentDes2" cateContentDes="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." cateContentDownNo="cateContentDown2" cateImgNo="cateImg3" imgNo="cateImg2" src={mobile} alt="Apps & Tools"/>
+
+                    <hr className="cateHr"/>
+
+                    <Cate cateSectionNo="cateSection" row="row cateRow3" cateContentNo="cateContent3" cateContentTitleNo="cateContentTitle3" cateContentTitle="AI" cateTitleNo="cateTitle3" cateContentDesNo="cateContentDes3" cateContentDes="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." cateContentDownNo="cateContentDown3" cateImgNo="cateImg3" imgNo="cateImg3" src={AI} alt="AI"/>
+
+                    <hr className="cateHr"/>
+
+                    <Cate2 cateSectionNo="cateSection4" row="row cateRow4" cateContentNo="cateContent4" cateContentTitleNo="cateContentTitle4" cateContentTitle="Others" cateTitleNo="cateTitle4" cateContentDesNo="cateContentDes4" cateContentDes="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." cateContentDownNo="cateContentDown4" cateImgNo="cateImg4" imgNo="cateImg4" src={others} alt="Others"/>
+
                 </div>
 
                 <hr />

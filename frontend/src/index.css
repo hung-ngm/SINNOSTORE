@@ -53,7 +53,7 @@ code {
 
 /* About */
 .About {
-  background-color: #e3e3e4;
+  background-color: #cbcbeb;
   padding: 40px 0 40px 0;
 }
 .aboutContent {
@@ -124,13 +124,84 @@ code {
 }
 
 
-/* Categories */
+/* Categories1 */
+.Category {
+  margin: 0 0 160px 0;
+}
+.CategoryText {
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bolder;
+}
 .Cate {
   /* background-color: #c0c1c2; */
   padding: 100px 20px;
 }
-.CateImg {
-  width: 400px;
+.cateHr {
+  width: 1200px;
+}
+.cateSection {
+  margin: 160px 0 160px 0;
+}
+.cateSection4 {
+  margin: 160px 0 0 0;
+}
+
+.cateContentTitle1 {
+  margin: 100px 0 0 6px;
+}
+.cateTitle1 {
+  font-weight: bolder;
+}
+.cateContentDes1 {
+  margin: 6px;
+}
+
+.cateContentTitle2 {
+  margin: 100px 0 0 6px;
+}
+.cateTitle2 {
+  font-weight: bolder;
+}
+.cateContentDes2 {
+  margin: 6px;
+}
+
+.cateContentTitle3 {
+  margin: 100px 0 0 6px;
+}
+.cateTitle3 {
+  font-weight: bolder;
+}
+.cateContentDes3 {
+  margin: 6px;
+}
+
+.cateContentTitle4 {
+  margin: 100px 0 0 6px;
+}
+.cateTitle4 {
+  font-weight: bolder;
+}
+.cateContentDes4 {
+  margin: 6px;
+}
+
+.cateImg1 {
+  width: 600px;
+  height: 360px;
+}
+.cateImg2 {
+  width: 600px;
+  height: 360px;
+}
+.cateImg3 {
+  width: 600px;
+  height: 360px;
+}
+.cateImg4 {
+  width: 600px;
+  height: 360px;
 }
 
 
