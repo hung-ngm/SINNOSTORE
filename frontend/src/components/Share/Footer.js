@@ -4,16 +4,17 @@ import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
 export const Footer = () => {
   return (
     <div>
-    <MDBFooter color="grey darken-2" className="font-small pt-4 mt-4">
+    <MDBFooter color="elegant-color-dark" className="font-small pt-4 mt-4">
+      
       <MDBContainer fluid className="text-center text-md-left">
         <MDBRow>
-          <MDBCol md="6">
+          <MDBCol md="4">
             <h5 className="title">SINNO</h5>
             <p>
               Câu lạc bộ là nơi học tập và tìm kiếm đam mê. 
             </p>
           </MDBCol>
-          <MDBCol md="6">
+          <MDBCol md="4">
             <h5 className="title">Products</h5>
             <ul>
               <li className="list-unstyled">
@@ -24,7 +25,7 @@ export const Footer = () => {
               </li>
             </ul>
           </MDBCol>
-          <MDBCol md="6">
+          <MDBCol md="4">
             <h5 className="title">Contact</h5>
             <ul>
               <li className="list-unstyled">
@@ -32,6 +33,16 @@ export const Footer = () => {
               </li>
               <li className="list-unstyled">
                 <a href="#!">Email: sinno@soict.hust.edu.vn</a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!" className="fb-ic mr-3">
+                  <MDBIcon fab icon="facebook-f" />
+                </a>
+              </li>
+              <li className="list-unstyled">
+                <a href="#!" className="ins-ic mr-3">
+                  <MDBIcon fab icon="instagram" />
+                 </a>
               </li>
             </ul>
           </MDBCol>
