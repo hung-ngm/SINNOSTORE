@@ -16,13 +16,13 @@ export const Auth = () => {
         <Container>
         
         
-        <Route path="/auth/signin" component={SignIn} />
+        <Route path="/auth" component={SignIn} exact />
         <Route path="/auth/signup" component={SignUp} />
         
         
 
         </Container>
-        
+
         </div>
     )
 }

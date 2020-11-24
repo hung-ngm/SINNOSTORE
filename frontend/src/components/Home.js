@@ -6,9 +6,9 @@ import { Cate } from "./Share/Cate";
 import { Cate2 } from "./Share/Cate2";
 import { About } from "./Share/About1";
 import { About2 } from "./Share/About2";
-import { Form } from "react-bootstrap";
+
 // image
-import web1 from './Share/images/Web1.jpg';
+
 import mobile from './Share/images/mobile.png';
 import IoT from './Share/images/IoT.jpg';
 import AI from './Share/images/AI.jpg';

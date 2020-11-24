@@ -22,8 +22,8 @@ export const NavBar = () => {
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-                    <Button variant="outline-info">Sign In</Button>
-                    <Button variant="outline-info">Sign Up</Button>
+                    <Nav.Link as={Link} to="/auth" className="text-white">Sign In</Nav.Link>
+                    
                 </Form>
             </Navbar.Collapse>
             </Navbar>
