@@ -1,82 +1,150 @@
-import React from 'react';
-import { Form, Button, Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
-import { useFormik } from 'formik';
-import * as Yup from 'yup';
+import React, { useState } from 'react';
+import Avatar from '@material-ui/core/Avatar';
+import Button from '@material-ui/core/Button';
+import CssBaseline from '@material-ui/core/CssBaseline';
+import TextField from '@material-ui/core/TextField';
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import { Link } from 'react-router-dom'; 
+import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
+import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
+import Typography from '@material-ui/core/Typography';
+import { makeStyles } from '@material-ui/core/styles';
+import Container from '@material-ui/core/Container';
 
-export const SignUp = (props) => {
-    const formik = useFormik({
-        initialValues: {
-          email: "",
-          password: "",
-          confirmPassword:""
-        },
-        validationSchema : Yup.object({
-            email: Yup.string()
-              .email("Invalid email format")
-              .required("Required!"),
-            password: Yup.string()
-              .min(8, "Minimum 8 characters")
-              .required("Required!"),
-            confirmPassword: Yup.string()
-              .oneOf([Yup.ref("password")], "Password's not match")
-              .required("Required!")
-        }),
-        onSubmit: (values) => {
-            console.log(values.email, values.password)
-        },  
-        
-    });
-    
+function Copyright() {
+  return (
+    <Typography variant="body2" color="textSecondary" align="center">
+      {'Copyright © '}
+        <Link color="inherit" to="/">
+          SinnoStore
+        </Link>{" "}
+      {new Date().getFullYear()}
+      {'.'}
+    </Typography>
+  );
+}
 
-    return (
-        
-        <Card>
-        <Card.Header as="h5">Sign Up</Card.Header>
-        <Card.Body>
-            <Form onSubmit={formik.handleSubmit}>
+const useStyles = makeStyles((theme) => ({
+  paper: {
+    marginTop: theme.spacing(8),
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  avatar: {
+    margin: theme.spacing(1),
+    backgroundColor: theme.palette.secondary.main,
+  },
+  form: {
+    width: '100%', // Fix IE 11 issue.
+    marginTop: theme.spacing(3),
+  },
+  submit: {
+    margin: theme.spacing(3, 0, 2),
+  },
+}));
 
-            <Form.Group controlId="email">
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" name="email" value={formik.values.email} onChange={formik.handleChange} />
-            {formik.errors.email && formik.touched.email && (
-                <Card.Text>{formik.errors.email}</Card.Text>
-            )}
-            </Form.Group>
-        
-            <Form.Group controlId="password">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" name="password" value={formik.values.password} onChange={formik.handleChange} />
-            {formik.errors.password && formik.touched.password && (
-                <Card.Text>{formik.errors.password}</Card.Text>
-            )}
-            </Form.Group>
-            
-            <Form.Group controlId="password">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Confirm Password" name="confirmPassword" value={formik.values.confirmPassword} onChange={formik.handleChange} />
-            {formik.errors.confirmPassword && formik.touched.confirmPassword && (
-                <Card.Text>{formik.errors.confirmPassword}</Card.Text>
-            )}
-            </Form.Group>
-            
-            <div className="d-flex">
-                
-            <Button type="submit" size="sm" variant="primary">Sign Up</Button>
-            <Card.Text className="m-3">
-            Have an account?
-            <Card.Link as={Link} to="/auth"> Sign In</Card.Link>
-            </Card.Text>
-            
-            
-        </div>
-            </Form>
-        
-            
-        </Card.Body>
-        </Card>
-            
-        
-        
-    )
+
+export const SignUp = () => {
+  const [values, setValues] = useState({
+      username: '',
+      password: '',
+      confirmPassword: '',
+  })
+
+  const handleChanges = (event) => {
+      setValues({
+          ...values,
+          [event.target.name]: event.target.value
+      })
+  }
+  const classes = useStyles();
+
+  return (
+    <Container component="main" maxWidth="xs">
+      <CssBaseline />
+      <div className={classes.paper}>
+        <Avatar className={classes.avatar}>
+          <LockOutlinedIcon />
+        </Avatar>
+        <Typography component="h1" variant="h5">
+          Sign up
+        </Typography>
+        <form className={classes.form} noValidate>
+          <Grid container spacing={2}>
+           
+          
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                id="username"
+                label="Username"
+                name="username"
+                autoComplete="username"
+                value={values.username}
+                onChange={handleChanges}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="current-password"
+                value={values.password}
+                onChange={handleChanges}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="confirmPassword"
+                label="Confirm Password"
+                type="password"
+                id="confirmPassword"
+                autoComplete="current-password"
+                value={values.confirmPassword}
+                onChange={handleChanges}
+              />
+            </Grid>
+            <Grid item xs={12}>
+              <FormControlLabel
+                control={<Checkbox value="allowExtraEmails" color="primary" />}
+                label="I want to receive inspiration, marketing promotions and updates via email."
+              />
+            </Grid>
+          </Grid>
+          <Button
+            type="submit"
+            fullWidth
+            variant="contained"
+            color="primary"
+            className={classes.submit}
+          >
+            Sign Up
+          </Button>
+          <Grid container justify="flex-end">
+            <Grid item>
+              <Link to="/auth" variant="body2">
+                Already have an account? Sign in
+              </Link>
+            </Grid>
+          </Grid>
+        </form>
+      </div>
+      <Box mt={5}>
+        <Copyright />
+      </Box>
+    </Container>
+  );
 }

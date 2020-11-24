@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -13,6 +13,7 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 
+// Copyright text
 const Copyright = () => {
     return (
       <Typography variant="body2" color="textSecondary" align="center">
@@ -61,7 +62,18 @@ const useStyles = makeStyles((theme) => ({
 
 
 export const SignIn = (props) => {
- 
+    const [values, setValues] = useState({
+      username: '',
+      password: ''
+    });
+
+    const handleChanges = (event) => {
+      setValues({
+        ...values,
+        [event.target.name] : event.target.value
+      })
+    }
+
 
     const classes = useStyles();
 
@@ -84,11 +96,12 @@ export const SignIn = (props) => {
                 required
                 fullWidth
                 id="email"
-                label="Email Address"
-                name="email"
-                autoComplete="email"
+                label="Username"
+                name="username"
+                autoComplete="username"
                 autoFocus
-                
+                value={values.username}
+                onChange={handleChanges}
                 />
                 
                 <TextField
@@ -101,7 +114,8 @@ export const SignIn = (props) => {
                 type="password"
                 id="password"
                 autoComplete="current-password"
-               
+                value={values.password}
+                onChange={handleChanges}
                 />
                 
                 <FormControlLabel
