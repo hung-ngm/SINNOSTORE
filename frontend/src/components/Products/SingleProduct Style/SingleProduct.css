@@ -1,0 +1,259 @@
+.product-single-card {
+    background-color: #f2f2f2; 
+    padding-top: 5rem;
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse.in {
+    display: block;
+}
+
+section.app-show-main > *{
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+}
+
+.product-main-page {
+    width: 66.1538461538%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.app-show-main > button, div, input, li, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+section.app-show-main .show-main-header {
+    line-height: 20px;
+    position: relative;
+    margin: 0 0 16px;
+    padding: 30px 30px 0;
+    background: #fff;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+section.app-show-main .show-main-header .main-header-icon {
+    min-height: 210px;
+    margin-left: 20px;
+    text-align: center;
+    float: left;
+    position: relative;
+    width: 180px;
+}
+
+section.app-show-main .show-main-header .main-header-icon .header-icon-body > img{
+    max-width: 100%;
+    width: 180px;
+    height: 180px;
+    max-height: 180px;
+}
+
+section.app-show-main .show-main-header .main-header-icon .main-header-rec {
+    display: inline-block;
+    padding: 15px 0;
+    text-align: center;
+}
+
+section.app-show-main .show-main-header .main-header-icon .main-header-rec > span{
+    padding: 3px 14px;
+    background-color: #b4ebfa;
+    border-radius: 15px;
+    font-size: 12px;
+    color: #14B9C8;
+}
+
+section.app-show-main .show-main-header .main-header-text {
+    position: relative;
+    margin-left: 250px;
+    margin-bottom: 30px;
+}
+
+.main-header-text .base-info-wrap {
+    width: 384px;
+    min-height: 100px;
+}
+
+section.app-show-main .show-main-header .main-header-text h1 {
+    display: inline-block;
+    margin: 0;
+    line-height: 30px;
+    max-height: 60px;
+    vertical-align: top;
+    font-size: 24px;
+    overflow: hidden;
+    max-width: 90%;
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-author {
+    display: block;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-emphasis: ellipsis;
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-author > a{
+    font-size: 12px;
+    color: #14B9C8;
+    line-height: 18px;
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .text-download-text {
+    margin: 0;
+    color: #666;
+    overflow: hidden;
+    padding-bottom: 5px;
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .app-data-wrap {
+    float: left;
+    margin-right: 10px;
+}
+
+section.app-show-main .show-main-header .description{
+    color: #999;
+    font-size: 0;
+    line-height: 20px;
+    margin: 6px auto 0;
+    float: left;
+}
+
+section.app-show-main .show-main-header .description .count-stats{
+    display: inline-block;
+    position: relative;
+    font-size: 14px;
+    margin-right: 12px;
+}
+
+section.app-show-main .show-main-header .main-header-text .header-text-download .download-btn-wrap {
+    overflow: hidden;
+}
+
+.product-button-download {
+    float: left;
+    position: relative;
+}
+
+.download-btn-wrap .btn {
+    padding: 7px 15px;
+    min-width: 125px;
+    line-height: 24px;
+    font-size: 14px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.btn-primary , .btn-default {
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.btn-primary {
+    color: #FFF;
+    border-color: #12A7B4;
+    background-color: #12A7B4;
+}
+
+.product-button-download .btn > span {
+    display:inline-block;
+    vertical-align: middle;
+}
+
+section.app-show-main .show-main-body {
+    position: relative;
+    margin-top: 15px;
+    line-height: 22px;
+    background: #FFF;
+    border-radius: 3px;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.05);
+}
+
+section.app-show-main .show-main-body.first {
+    margin-top: 0;
+}
+
+section.app-show-main .show-main-body .main-body-common{
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee;
+}
+
+
+section.app.show-main .show-main-body .section-title {
+    margin-bottom: 15px;
+    padding: 20px 30px 0;
+    border-bottom: none;
+}
+
+section.app-show-main .show-main-body .main-body-common .section-title, section.product-main-page .show-main-body .main-body-common .section-title {
+    padding: 0;
+    border-bottom: none;
+}
+
+.section-title > h3 {
+    margin: 0 0 10px;
+    padding: 0 0 0 8px;
+    line-height: 20px;
+    font-size: 18px;
+    border-left: 4px solid #14B9C8;
+}
+
+section.app.show-main .show-main-body .section-title > h3{
+    margin: 0;
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list {
+    margin-bottom: 0;
+    padding: 0;
+    height: 58.2px;
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list>li {
+    float: left;
+    margin-bottom: 10px;
+    width: 30%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list> li>span {
+    display: block;
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list > li > span.info-item-title {
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+section.app-show-main .show-main-body .main-body-info .body-info-list > li > span.info-item-content {
+    color: #666;
+}
+
+/*Rating*/
+section.app-show-main .show-main-body .product-review-section .product-review-title {
+    padding: 20px 30px 15px;
+    border-bottom: 1px solid #eee;
+}
