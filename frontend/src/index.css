@@ -293,3 +293,11 @@ img.medium {
 .col-1 {
   flex: 1 1 25rem;
 }
+
+
+
+
+/* Contact */
+.ContactForm {
+  margin: 100px 0 0 0;
+}
