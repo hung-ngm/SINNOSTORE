@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { NavBar } from '../Share/NavBar';
 import { Footer } from '../Share/Footer';
 import './SingleProduct Style/SingleProduct.css';
-import { Rating } from './Rating';
+
 
 export const SingleProduct = (props) => {
     const product = products.find((x) => x._id === props.match.params.id)

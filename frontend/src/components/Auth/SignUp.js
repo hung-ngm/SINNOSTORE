@@ -12,6 +12,8 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { Alert } from '@material-ui/lab'
+import axios from '../../utils/axios';
 
 function Copyright() {
   return (
@@ -54,12 +56,28 @@ export const SignUp = () => {
       confirmPassword: '',
   })
 
+  //0 : haven't signed up
+  //1: sign up successfully
+  //2: sign up fail
+  const [signUpStatus, setSignUpStatus] = useState(0)
+
   const handleChanges = (event) => {
       setValues({
           ...values,
           [event.target.name]: event.target.value
       })
   }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    axios.post('/auth/signup', values).then(() => {
+      setSignUpStatus(1)
+    }).catch((err) => {
+      console.log(err)
+      setSignUpStatus(2)
+    })
+  }
+
   const classes = useStyles();
 
   return (
@@ -72,9 +90,11 @@ export const SignUp = () => {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form} noValidate onSubmit={handleSubmit}>
           <Grid container spacing={2}>
-           
+            {signUpStatus === 1 && <Alert severity="success">Sign Up Successfully</Alert> }
+            {signUpStatus === 2 && <Alert severity="error">Sign Up Failed</Alert> }
+            
           
             <Grid item xs={12}>
               <TextField

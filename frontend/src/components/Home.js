@@ -7,6 +7,8 @@ import { Cate2 } from "./Share/Cate2";
 import { About } from "./Share/About1";
 import { About2 } from "./Share/About2";
 
+
+
 // image
 
 import mobile from './Share/images/mobile.png';
@@ -16,6 +18,7 @@ import others from './Share/images/others.jpg';
 
 
 export const Home = () => {
+    
     return (
         
         <div className="Home">
