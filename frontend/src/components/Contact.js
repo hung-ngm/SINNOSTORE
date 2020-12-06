@@ -8,6 +8,7 @@ export const Contact = () => {
     return (
         <div className="Contact">
             <NavBar />
+            <div className="ContactForm">
                 <Form>
                   <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email address</Form.Label>
@@ -25,6 +26,7 @@ export const Contact = () => {
                     Submit
                   </Button>
                 </Form>
+            </div>
             <Footer/>
         </div>
     )
