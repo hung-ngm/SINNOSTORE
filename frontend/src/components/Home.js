@@ -75,7 +75,7 @@ export const Home = () => {
 
                 <hr />
 
-                <div className="Footer">
+                <div>
                     <Footer />
                 </div>
             

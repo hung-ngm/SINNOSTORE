@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Button from "@material-ui/core/Button";
 import ClickAwayListener from "@material-ui/core/ClickAwayListener";
 import Grow from "@material-ui/core/Grow";
@@ -8,7 +8,6 @@ import MenuItem from "@material-ui/core/MenuItem";
 import MenuList from "@material-ui/core/MenuList";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import { makeStyles } from "@material-ui/core/styles";
-import AuthCtx from "../../context/auth";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,8 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const NavIcon = () => {
-  const authCtx = useContext(AuthCtx);
+export const NavIcon = (props) => {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
@@ -36,10 +34,6 @@ export const NavIcon = () => {
 
     setOpen(false);
   };
-
-  const handleLogout = () => {
-      authCtx.setAuthUser(null)
-  }
 
   function handleListKeyDown(event) {
     if (event.key === "Tab") {
@@ -61,6 +55,7 @@ export const NavIcon = () => {
   return (
     <div className={classes.root}>
       <div>
+        
         <Button
           ref={anchorRef}
           aria-controls={open ? "menu-list-grow" : undefined}
@@ -87,18 +82,21 @@ export const NavIcon = () => {
             >
               <Paper>
                 <ClickAwayListener onClickAway={handleClose}>
+                  
                   <MenuList
                     autoFocusItem={open}
                     id="menu-list-grow"
                     onKeyDown={handleListKeyDown}
                   >
-                    <MenuItem onClick={handleLogout}>Logout</MenuItem>
+                    <MenuItem>{props.username}</MenuItem>
+                    <MenuItem onClick={props.handleLogout}>Logout</MenuItem>
                   </MenuList>
                 </ClickAwayListener>
               </Paper>
             </Grow>
           )}
         </Popper>
+        
       </div>
     </div>
   );

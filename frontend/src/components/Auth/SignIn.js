@@ -13,8 +13,7 @@ import LockOutlinedIcon from "@material-ui/icons/LockOutlined";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import axios from "../../utils/axios";
-import AuthCtx from '../../context/auth';
-
+import AuthCtx from "../../context/auth";
 
 // Copyright text
 const Copyright = () => {
@@ -81,10 +80,14 @@ export const SignIn = (props) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    axios.post('/auth/signin', values).then((res) => {
-      localStorage.setItem('jwt', res.data.jwt);
-      authCtx.setAuthUser(res.data);
-  }).catch((err) => {});
+    axios
+      .post("/auth/signin", values)
+      .then((res) => {
+        localStorage.setItem("jwt", res.data.jwt);
+        localStorage.setItem("username", res.data.username);
+        authCtx.setAuthUser(res.data);
+      })
+      .catch((err) => {});
   };
 
   const classes = useStyles();
