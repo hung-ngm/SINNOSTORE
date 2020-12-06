@@ -8,23 +8,27 @@ export const Contact = () => {
     return (
         <div className="Contact">
             <NavBar />
-            <div className="ContactForm">
-                <Form>
-                  <Form.Group controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" />
-                    <Form.Text className="text-muted">
-                      We'll never share your email with anyone else.
-                    </Form.Text>
-                  </Form.Group>
+            <div className="App">
+                 <Form className = "text-center">
+                      <Form.Group as={Row} controlId="formBasicEmail">
+                          <Form.Label column sm="3">Email address</Form.Label>
+                          <Col sm="8">
+                            <Form.Control type="email" placeholder="Enter email" />
+                            <Form.Text className="text-muted">
+                              We'll never share your email with anyone else.
+                            </Form.Text>
+                          </Col>
+                      </Form.Group>
 
-                  <Form.Group controlId="formBasicComments">
-                    <Form.Label>Comments</Form.Label>
-                    <Form.Control type="text" placeholder="Comments" />
-                  </Form.Group>
-                  <Button variant="primary" type="submit">
-                    Submit
-                  </Button>
+                      <Form.Group as={Row} controlId="formBasicComments">
+                        <Form.Label column sm="3">Comments</Form.Label>
+                        <Col sm="8">
+                          <Form.Control type="text" placeholder="Comments" />
+                        </Col>
+                      </Form.Group>
+                      <Button  as={Row} column sm ="2" variant="primary" type="submit">
+                        Submit
+                      </Button>
                 </Form>
             </div>
             <Footer/>
