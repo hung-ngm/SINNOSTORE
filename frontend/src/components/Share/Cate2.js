@@ -22,7 +22,7 @@ export function Cate2(prop) {
                                     <p>{prop.cateContentDes}</p>
                                 </div>
                                 <div className={prop.cateContentDownNo}>
-                                    <Button className="cateButton" variant="outline-primary">Download</Button>{' '}
+                                    <Button className="cateButton" variant="outline-primary">More</Button>{' '}
                                 </div>
                             </div>
                         </div>
